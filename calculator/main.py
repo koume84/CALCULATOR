@@ -30,14 +30,14 @@ class ExtraActionButton(CalcButton):
 class ExponentButton(CalcButton):
     def __init__(self, text, button_clicked):
         CalcButton.__init__(self, text, button_clicked)
-        self.bgcolor = ft.colors.LIGHT_GREEN_400
-        self.color = ft.colors.BLACK
+        self.bgcolor = ft.colors.WHITE24
+        self.color = ft.colors.WHITE
 
 class TrigButton(CalcButton):
     def __init__(self, text, button_clicked):
         CalcButton.__init__(self, text, button_clicked)
-        self.bgcolor = ft.colors.LIGHT_GREEN_400
-        self.color = ft.colors.BLACK
+        self.bgcolor = ft.colors.WHITE24
+        self.color = ft.colors.WHITE
 
 class CalculatorApp(ft.Container):
     def __init__(self):
@@ -196,7 +196,7 @@ class CalculatorApp(ft.Container):
         elif operator == "xʸ":
             return self.format_number(math.pow(operand1, operand2))
 
-    def calculate_trig_function(self, function, value):
+def calculate_trig_function(self, function, value):
         if function == "sin":
             return self.format_number(math.sin(math.radians(value)))
         elif function == "cos":
@@ -216,4 +216,3 @@ def main(page: ft.Page):
     page.add(calc)
 
 ft.app(target=main)
-#
