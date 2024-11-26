@@ -196,7 +196,7 @@ class CalculatorApp(ft.Container):
         elif operator == "xʸ":
             return self.format_number(math.pow(operand1, operand2))
 
-def calculate_trig_function(self, function, value):
+    def calculate_trig_function(self, function, value):
         if function == "sin":
             return self.format_number(math.sin(math.radians(value)))
         elif function == "cos":
